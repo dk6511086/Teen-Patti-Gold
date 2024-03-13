@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Patti Gold - India's number one Teen Patti App</title>
+    <meta name="keyword" content="teen patti gold, gold teen patti, 3patti gold, gold 3 patti, teen patti gold apk download, teen patti gold game, teen patti gold download, teen patti gold 60 bonus, gold teen patti apk download, new taurus app ,tauras teen patti gold, master teen patti gold">
+	<meta name="description" content="Teen Patti Gold is a very popular game, it is the game of Teen Patti Master, if you play the game on Teen Patti Gold then you will win 100% and will be able to earn a lot of money.">
+    <link rel="shortcut icon" href="imges/teen-patti-gold-apk-logo.ico" type="image/x-icon">
+    <meta name="og:name" content="Teen Patti Gold"/>
+    <meta property="og:title" content="Teen Patti Gold - India's number one Teen Patti App" />
+    <meta property="og:description" content="Teen Patti Gold is a very popular game, it is the game of Teen Patti Master, if you play the game on Teen Patti Gold then you will win 100% and will be able to earn a lot of money." />
+    <link href="index.html" />
+    <meta content="Teen Patti Gold - India's number one Teen Patti App" name="title"/>
+    <meta property="og:url" content="index.html" />
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="gold official">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="warp">
+
+        <div class="main"> 
+        </div>
+        <img id="installbtn"  src="imges/gold-download-btn.png" class="adcdfx dowmload-button animate__animated animate__pulse animate__infinite"
+            alt="Rummy Guru download">
+        <div class="footer">
+            <div class="tip">
+                <img src="imges/teen-patti-gold-apk-logo.png" class="small-logo" alt="Rummy Guru App">
+                <div class="tip-content">
+                    <b class="bit-game">Teen Patti Gold</b>
+                    <p class="subtitle">Play games to win ₹9999</p>
+                </div>
+            </div>
+            <div id="downloadbtn" class="dowmload"> Download </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return "";
+    }
+    var code = getQueryVariable("code")
+	var campaign = getQueryVariable("campaign")
+
+    function copyUrl(_sTxt) {
+        // content  
+        // 
+        const aux = document.createElement('input')
+        // 
+        const content = _sTxt;
+        // 
+        aux.setAttribute('value', content)
+        // 
+        document.body.appendChild(aux)
+        // 
+        aux.select()
+        // 
+        document.execCommand('copy')
+        // 
+        document.body.removeChild(aux)
+    }
+
+	function readyAdjust(code,campaign){
+		var img = new Image();
+		let url = "https://view.adjust.com/impression/XXXXXXX";
+		if (code != "")
+		  url  = url +"?label="+code;
+		else if (campaign != "")  
+		  url = url + "?campaign="+campaign;
+		if  (code != ""){
+		  img.src =url;
+		}
+		 
+	}
+	function downloadAdjust(code,campaign){
+	 var img = new Image();
+		let url = "https://app.adjust.com/XXXXXXXX";
+		if (code != "")
+		  url  = url +"?label="+code;
+		else if (campaign != "")  
+		  url = url + "?campaign="+campaign;
+	    if  (code != ""){
+		  if (!code.startsWith("c_"))
+		    code="r_"+code;
+		  copyUrl(code);
+		  img.src =url;
+		}
+	 if (isIOS()) {
+      window.location.href="https://dv25qie9zj1t9.cloudfront.net/cg/files/3pnk5c5r0hmbpflrzlxuncg/Gold_z5lome.apk?ss=custom_default";
+	  return false;
+     }
+	 const link = document.createElement("a");
+	 link.style.display = "none";
+	 link.href ="https://dv25qie9zj1t9.cloudfront.net/cg/files/3pnk5c5r0hmbpflrzlxuncg/Gold_z5lome.apk?ss=custom_default"
+	 link.download = "bg.apk"
+	 document.body.appendChild(link);
+	 link.click();
+	 document.body.removeChild(link);
+	}
+
+    function isIOS(){
+        var u = navigator.userAgent;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios
+        return isiOS;
+    }
+
+    button = document.getElementById("downloadbtn");
+    button.onclick = function() {
+        downloadAdjust(code,campaign);
+        return false;
+    }
+	
+    installbtn = document.getElementById("installbtn");
+    installbtn.onclick = function() {
+        downloadAdjust(code,campaign);
+        return false;
+    }
+ 
+    readyAdjust(code,campaign);  
+</script>
+</html>
