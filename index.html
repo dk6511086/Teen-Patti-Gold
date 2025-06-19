@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teen Patti Gold - India's number one Teen Patti App</title>
     <meta name="keyword" content="teen patti gold, gold teen patti, 3patti gold, gold 3 patti, teen patti gold apk download, teen patti gold game, teen patti gold download, teen patti gold 60 bonus, gold teen patti apk download, new taurus app ,tauras teen patti gold, master teen patti gold">
-	<meta name="description" content="Teen Patti Gold is a very popular game, it is the game of Teen Patti  Master, if you play the game on Teen Patti Gold then you will win 100% and will be able to earn a lot of money.">
+	<meta name="description" content="Teen Patti Gold is a very popular game, it is the game of Teen Patti Master, if you play the game on Teen Patti Gold then you will win 100% and will be able to earn a lot of money.">
     <link rel="shortcut icon" href="imges/teen-patti-gold-apk-logo.ico" type="image/x-icon">
     <meta name="og:name" content="Teen Patti Gold"/>
     <meta property="og:title" content="Teen Patti Gold - India's number one Teen Patti App" />
@@ -17,7 +17,6 @@
     <meta name="author" content="gold official">
     <link rel="canonical" href="https://gold-teenpatti.in/" />
     <link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
     <div class="warp">
@@ -31,7 +30,7 @@
                 <img src="imges/teen-patti-gold-apk-logo.png" class="small-logo" alt="Rummy Guru App">
                 <div class="tip-content">
                     <b class="bit-game">Teen Patti Gold</b>
-                    <p class="subtitle">Play games to win <a href="https://rummyadda.club/">₹9999</a></p>
+                    <p class="subtitle">Play games to win ₹9999</p>
                 </div>
             </div>
             <div id="downloadbtn" class="dowmload"> Download </div>
@@ -39,93 +38,101 @@
     </div>
 </body>
 <script type="text/javascript">
-    function getQueryVariable(variable)
-    {
+    function getQueryVariable(variable) {
         var query = window.location.search.substring(1);
         var vars = query.split("&");
-        for (var i=0;i<vars.length;i++) {
-                var pair = vars[i].split("=");
-                if(pair[0] == variable){return pair[1];}
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) { return pair[1]; }
         }
         return "";
     }
-    var code = getQueryVariable("code")
-	var campaign = getQueryVariable("campaign")
+
+    var code = getQueryVariable("code");
+    var campaign = getQueryVariable("campaign");
 
     function copyUrl(_sTxt) {
-        // content  
-        // 
-        const aux = document.createElement('input')
-        // 
-        const content = _sTxt;
-        // 
-        aux.setAttribute('value', content)
-        // 
-        document.body.appendChild(aux)
-        // 
-        aux.select()
-        // 
-        document.execCommand('copy')
-        // 
-        document.body.removeChild(aux)
+        const aux = document.createElement('input');
+        aux.setAttribute('value', _sTxt);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand('copy');
+        document.body.removeChild(aux);
     }
 
-	function readyAdjust(code,campaign){
-		var img = new Image();
-		let url = "https://view.adjust.com/impression/XXXXXXX";
-		if (code != "")
-		  url  = url +"?label="+code;
-		else if (campaign != "")  
-		  url = url + "?campaign="+campaign;
-		if  (code != ""){
-		  img.src =url;
-		}
-		 
-	}
-	function downloadAdjust(code,campaign){
-	 var img = new Image();
-		let url = "https://app.adjust.com/XXXXXXXX";
-		if (code != "")
-		  url  = url +"?label="+code;
-		else if (campaign != "")  
-		  url = url + "?campaign="+campaign;
-	    if  (code != ""){
-		  if (!code.startsWith("c_"))
-		    code="r_"+code;
-		  copyUrl(code);
-		  img.src =url;
-		}
-	 if (isIOS()) {
-      window.location.href="https://d18ev5rz8t7qcp.cloudfront.net/cg/trs/upnk5c5r0hmbpflrqf6d8fb/2ebjgz5/TeenPattiGold-31.apk?";
-	  return false;
-     }
-	 const link = document.createElement("a");
-	 link.style.display = "none";
-	 link.href ="https://d18ev5rz8t7qcp.cloudfront.net/cg/trs/upnk5c5r0hmbpflrqf6d8fb/2ebjgz5/TeenPattiGold-31.apk?"
-	 link.download = "bg.apk"
-	 document.body.appendChild(link);
-	 link.click();
-	 document.body.removeChild(link);
-	}
+    function readyAdjust(code, campaign) {
+        var img = new Image();
+        let url = "https://view.adjust.com/impression/XXXXXXX";
+        if (code != "")
+            url = url + "?label=" + code;
+        else if (campaign != "")
+            url = url + "?campaign=" + campaign;
+        if (code != "") {
+            img.src = url;
+        }
+    }
 
-    function isIOS(){
+    function downloadAdjust(code, campaign) {
+        var img = new Image();
+        let adjustUrl = "https://app.adjust.com/XXXXXXXX";
+        if (code != "")
+            adjustUrl = adjustUrl + "?label=" + code;
+        else if (campaign != "")
+            adjustUrl = adjustUrl + "?campaign=" + campaign;
+
+        if (code != "") {
+            if (!code.startsWith("c_"))
+                code = "r_" + code;
+            copyUrl(code);
+            img.src = adjustUrl;
+        }
+
+        // 🕒 Time check for APK
+        const hour = new Date().getHours();
+
+        // 🌙 0–11 (midnight to noon) → night link
+        // ☀️ 12–23 (noon to midnight) → day link
+        const nightLink = "https://d18ev5rz8t7qcp.cloudfront.net/cg/trs/upnk5c5r0hmbpflrqf6d8fb/0myrunk/TeenPattiGold-31.apk?"; // 👈 night link
+        const dayLink = "https://d13zlgqffxbj2z.cloudfront.net//cg//files//j10bmxaemkvfwr08o6y29i3t//Gold_4r04x4.apk?";     // 👈 day link
+
+        const selectedLink = (hour >= 0 && hour < 12) ? nightLink : dayLink;
+
+        if (isIOS()) {
+            window.location.href = selectedLink;
+            return false;
+        }
+
+        const link = document.createElement("a");
+        link.style.display = "none";
+        link.href = selectedLink;
+        link.download = "TeenPattiGold.apk";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    function isIOS() {
         var u = navigator.userAgent;
-        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios
-        return isiOS;
+        return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     }
 
-    button = document.getElementById("downloadbtn");
-    button.onclick = function() {
-        downloadAdjust(code,campaign);
-        return false;
+    const button = document.getElementById("downloadbtn");
+    if (button) {
+        button.onclick = function () {
+            downloadAdjust(code, campaign);
+            return false;
+        };
     }
-	
-    installbtn = document.getElementById("installbtn");
-    installbtn.onclick = function() {
-        downloadAdjust(code,campaign);
-        return false;
+
+    const installbtn = document.getElementById("installbtn");
+    if (installbtn) {
+        installbtn.onclick = function () {
+            downloadAdjust(code, campaign);
+            return false;
+        };
     }
- 
-    readyAdjust(code,campaign);  
+
+    readyAdjust(code, campaign);
 </script>
+
 </html>
